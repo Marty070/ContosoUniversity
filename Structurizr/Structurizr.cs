@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 using Structurizr.Analysis;
 using Structurizr.Client;
 using System.Linq;
+using ContosoUniversity.Models;
 
 namespace Structurizr
 {
@@ -90,8 +92,8 @@ namespace Structurizr
             styles.Add(new ElementStyle("Database") { Shape = Shape.Cylinder });
             styles.Add(new ElementStyle(Tags.Component) { Background = "#407f7f", Color = "#ffffff" });
 
-            StructurizrClient structurizrClient = new StructurizrClient("key", "secret");
-            structurizrClient.MergeWorkspace(5651, workspace);
+            StructurizrClient structurizrClient = new StructurizrClient("20e54135-adff-4bdf-b684-ff6c3ffc478f", "1c714777-3b06-4e2a-9eb4-35a3648b1592");
+            structurizrClient.MergeWorkspace(32431, workspace);
         }
     }
 }
